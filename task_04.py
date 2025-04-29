@@ -62,18 +62,18 @@ app.layout = dbc.Container([
         dbc.Col(dcc.Graph(id='age-distribution'), md=4)
     ]),
     
-    dbc.Row([
-        dbc.Col([
-            html.Div([
-                dcc.Markdown("""
-                **Key Insights:**
-                - 63% of eco-friendly vehicles are pedicabs
-                - Electric vehicles have 2021 avg. model year vs 2014 for gasoline
-                - 72% of wheelchair accessible vehicles use alternative fuels
-                """)
-            ], className="p-3 border rounded mt-4 bg-light")
-        ], md=12)
-    ])
+    # dbc.Row([
+    #     dbc.Col([
+    #         html.Div([
+    #             dcc.Markdown("""
+    #             **Key Insights:**
+    #             - 63% of eco-friendly vehicles are pedicabs
+    #             - Electric vehicles have 2021 avg. model year vs 2014 for gasoline
+    #             - 72% of wheelchair accessible vehicles use alternative fuels
+    #             """)
+    #         ], className="p-3 border rounded mt-4 bg-light")
+    #     ], md=12)
+    # ])
 ], fluid=True)
 
 @callback(
